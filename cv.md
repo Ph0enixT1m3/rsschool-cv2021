@@ -16,5 +16,3 @@
 ******
 
 ### About me
-
-and check user on my work PC

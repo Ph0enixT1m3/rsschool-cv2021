@@ -1,0 +1,36 @@
+* {
+    outline: none !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #070707;
+    background-color: #F6F6F6;
+}
+
+.container {
+    max-width: 945px;
+    margin: 0 auto;
+}
+
+a {
+    color: #828282;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #070707;
+}
+
+img {
+    display: block;
+}
+
+img.img-fluid {
+    max-width: 100%;
+}

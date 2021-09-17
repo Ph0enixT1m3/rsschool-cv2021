@@ -1,12 +1,28 @@
 const swiper = new Swiper('.swiper', {
     speed: 700,
     slidesPerView: 4,
-    // spaceBetween: 30,
     slidesPerGroup: 2,
-    // autoplay: {
-    //     delay: 7000,
-    //     disableOnInteraction: false,
-    // },
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1
+        },
+        420: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        },
+        420: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 4,
+            slidesPerGroup: 2
+        }
+    },
 
 
     // And if we need scrollbar

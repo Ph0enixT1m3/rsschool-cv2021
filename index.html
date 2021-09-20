@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>My perfect(no) CV</title>
@@ -22,8 +25,8 @@
                 <div class="main-header_item"><a href="#contacts">Contacts</a></div>
             </nav>
             <nav class="mobile-menu">
-              <div class="close-menu">
-                <span>close</span>
+              <div class="toggle-menu">
+                <span></span>
               </div>
               <div class="mobile-menu_list">
                 <div class="main-header_item main-header_item-active"><a href="#home">Home</a></div>
@@ -64,9 +67,13 @@
         <section class="main-about" id="about">
             <div class="container">
                 <h2>About me</h2>
-                <p>One day I watch some funny video in youtube and I accidentally saw an ad with beautefull banner about Frontend developing… </p>
+                <p>One day I watch some funny video in youtube and I accidentally saw an ad with beautiful  banner about Frontend developing… </p>
                 <p>And I want to try myself in development. I started learning with HTML and CSS. After a long time I try make up a layout and I have SUCCESS!! </p>
                 <p>As I studied layout, I tried to study English. But my written English is poor. It seems to me that my spoken English is much better than written. I compose this with google translate :)</p>
+                <h3>My Education</h3>
+                <p>I graduated from the "Minsk State Radio Engineering College" (now it is called the Branch of the Belarusian State University of Radio Engineering and Radio Engineering "Minsk Radio Engineering College"). At the moment I am finishing BSUIR, and now the writing of the final project begins.</p>
+                <h4>My english level</h4>
+                <p>I think my level of English is A2.<br><span class="translucent">(But I think my level is google translate)</span></p>
             </div>
         </section>
 
@@ -76,51 +83,103 @@
                 <p>I work in such programs as</p>
                 <div class="main-skills_list">
                     <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="main-skills_item swiper-slide">
+                        <ul class="swiper-wrapper">
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/01.png" alt="js">
                                 <p>JavaScript Basics | jQuery</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/02.png" alt="html">
                                 <p>HTML5</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/03.png" alt="css">
                                 <p>CCS3</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/04.png" alt="php">
                                 <p>PHP</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/05.png" alt="wordpress">
                                 <p>Wordpress, CMS Bitrix, OpenCart and many other CMS</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/06.png" alt="photoshop">
                                 <p>Adobe Photoshop, Figma, Zeplin and Avocode</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/07.png" alt="vscode">
                                 <p>VSCode</p>
                                 <div class="rating"></div>
-                            </div>
-                            <div class="main-skills_item swiper-slide">
+                            </li>
+                            <li class="main-skills_item swiper-slide">
                                 <img src="assets/img/skills/08.png" alt="github">
                                 <p>Git, GitHub</p>
                                 <div class="rating"></div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                         <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="main-projects" id="projects">
+          <div class="container">
+            <h2>Recent projects</h2>
+            <div class="main-projects_item">
+              <a href="https://re-future.ru/" target="_blank"><img src="assets/img/proj/proj1.png" alt=""></a>
+              <a href="">
+                <h3>Digital agency "re:future"</h3>
+              </a>
+              <p>Re: future is a full cycle marketing agency. Complex website promotion services. 10 years of digital business solutions development.</p>
+              <p class="use-skills"><span>&lt;</span>html, css, less, bootstrap, js, jquery, slickslider<span>/&gt;</span></p>
+            </div>
+            <div class="main-projects_item">
+              <a href="https://petoneer.by/" target="_blank"><img src="assets/img/proj/proj3.png" alt=""></a>
+              <a href="">
+                <h3>"Petoneer" - online store</h3>
+              </a>
+              <p>The Chinese holding company SkyRC has acquired its own brand Petoneer, which specializes in the production of smart drinkers, feeders and other accessories for pets.</p>
+              <p class="use-skills"><span>&lt;</span>html, css, js, jquery, php, swipper, wordpress, woocommerce<span>/&gt;</span></p>
+            </div>
+            <div class="main-projects_item">
+              <a href="https://tripsforfriends.ru/" target="_blank"><img src="assets/img/proj/proj2.png" alt=""></a>
+              <a href="">
+                <h3>TRIPS FOR FRIENDS - Homepage</h3>
+              </a>
+              <p>More than four hundred people a year travel with us through various countries.</p>
+              <p class="use-skills"><span>&lt;</span>php, wordpress, woocommerce<span>/&gt;</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-code" id="code">
+            <div class="container">
+                <h2>Code examples</h2>
+                <pre><code class="javascript">
+        document.querySelector(".toggle-menu").onclick = function() {open()};
+        function open() {
+            document.querySelector(".mobile-menu_list").classList.toggle("show");
+            document.querySelector(".main-header").classList.toggle("show");
+            document.querySelector(".toggle-menu").classList.toggle("show");
+            document.querySelector("body").classList.toggle("show");
+        }
+        document.querySelector(".mobile-menu_list").onclick = function() {close()};
+        function close() {
+            document.querySelector(".mobile-menu_list").classList.remove("show");
+            document.querySelector(".main-header").classList.remove("show");
+            document.querySelector(".toggle-menu").classList.remove("show");
+            document.querySelector("body").classList.remove("show");
+        }
+                </code></pre>
             </div>
         </section>
 
@@ -167,22 +226,22 @@
                 </a>
                 <ul class="social-links">
                     <li>
-                      <a href="#">
+                      <a href="https://t.me/Zhdan_D_ke" target="_blank">
                           <img src="assets/img/contacts/telegram.png" alt="">
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://vk.com/diman_namid" target="_blank">
                           <img src="assets/img/contacts/vk.png" alt="">
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://api.whatsapp.com/send?phone=375293625852" target="_blank">
                           <img src="assets/img/contacts/whatsapp.png" alt="">
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="viber://add?number=375293625852" target="_blank">
                           <img src="assets/img/contacts/viber.png" alt="">
                       </a>
                     </li>
@@ -196,16 +255,17 @@
     </main>
     <footer>
         <div class="container">
-            <div><a href="https://github.com/Ph0enixT1m3">https://github.com/Ph0enixT1m3</a></div>
+            <div><a href="https://github.com/Ph0enixT1m3" target="_blank">https://github.com/Ph0enixT1m3</a></div>
             <div>2021</div>
             <div>
-                <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="">
+                <a href="https://rs.school/js/" target="_blank">
+                    <img src="assets/img/rs_school_js.png" alt="">
                 </a>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

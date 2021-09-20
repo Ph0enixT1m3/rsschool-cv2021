@@ -14,19 +14,32 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <nav>
+            <nav class="main-menu">
                 <div class="main-header_item main-header_item-active"><a href="#home">Home</a></div>
                 <div class="main-header_item"><a href="#about">About me</a></div>
                 <div class="main-header_item"><a href="#skills">Skills</a></div>
                 <div class="main-header_item"><a href="#courses">Courses</a></div>
                 <div class="main-header_item"><a href="#contacts">Contacts</a></div>
             </nav>
+            <nav class="mobile-menu">
+              <div class="close-menu">
+                <span>close</span>
+              </div>
+              <div class="mobile-menu_list">
+                <div class="main-header_item main-header_item-active"><a href="#home">Home</a></div>
+                <div class="main-header_item"><a href="#about">About me</a></div>
+                <div class="main-header_item"><a href="#skills">Skills</a></div>
+                <div class="main-header_item"><a href="#courses">Courses</a></div>
+                <div class="main-header_item"><a href="#contacts">Contacts</a></div>
+              </div>
+            </nav>
         </div>
     </header>
     <main>
+      
         <section class="main-section" id="home">
             <div class="container">
-                <article class="main-section_heading">
+                <div class="main-section_heading">
                     <div class="main-section_name">
                         <h1>Dmitry<br>Zhdanovich</h1>
                     </div>
@@ -41,12 +54,13 @@
                         <span></span>
                         <img src="assets/img/01-4.png" alt="russia" width="40">
                     </div>
-                </article>
-                <article class="main-section_photo">
-                    <img class="img-fluid" src="assets/img/01.png" alt="">
-                </article>
+                </div>
+                <div class="main-section_photo">
+                    <img class="img-fluid" src="assets/img/01.png" alt="Dmitry Zhdanovich">
+                </div>
             </div>
         </section>
+
         <section class="main-about" id="about">
             <div class="container">
                 <h2>About me</h2>
@@ -55,6 +69,7 @@
                 <p>As I studied layout, I tried to study English. But my written English is poor. It seems to me that my spoken English is much better than written. I compose this with google translate :)</p>
             </div>
         </section>
+
         <section class="main-skills" id="skills">
             <div class="container">
                 <h2>Skills</h2>
@@ -108,6 +123,7 @@
                 </div>
             </div>
         </section>
+
         <section class="main-courses" id="courses">
             <div class="container">
                 <h2>Courses</h2>
@@ -139,34 +155,44 @@
                 </div>
             </div>
         </section>
+
         <section class="main-contacts" id="contacts">
             <div class="container">
                 <h2>Contacts</h2>
-                <p class="main-contacts_text">Want to know more or just chat?<br>
-                    You are welcome!
-                </p>
+                <h3 class="main-contacts_text">Want to know more or just chat?</h3>
+                <h4>You are welcome!</h4>
+                
                 <a class="btn-fill-black" href="https://t.me/Zhdan_D_ke" target="_blank">
-                    Send message
+                    <h5>Send message</h5>
                 </a>
-                <div class="social-links">
-                    <a href="#">
-                        <img src="assets/img/contacts/telegram.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/img/contacts/vk.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/img/contacts/whatsapp.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/img/contacts/viber.png" alt="">
-                    </a>
-                </div>
+                <ul class="social-links">
+                    <li>
+                      <a href="#">
+                          <img src="assets/img/contacts/telegram.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                          <img src="assets/img/contacts/vk.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                          <img src="assets/img/contacts/whatsapp.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                          <img src="assets/img/contacts/viber.png" alt="">
+                      </a>
+                    </li>
+                </ul>
                 <p class="main-contacts_text-end">Write me on <br>
                 Telegram, Vkontakte, WhatsApp, Viber
                 </p>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="container">
